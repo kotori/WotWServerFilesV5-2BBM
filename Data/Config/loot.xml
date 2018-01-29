@@ -8,6 +8,12 @@
 <lootcontainers>
 <lootplaceholders>
 
+	<placeholder name="CustomCarLootHelper">
+		<block name="cntCar03SedanDamage0"/>
+		<block name="cntCar03SedanDamage1"/>
+		<block name="cntCar03SedanDamage2"/>
+	</placeholder>
+
 	<!-- When unwrapping a prefab into the world, replace the lootForest block with one of the following -->
 	<placeholder name="lootForestHelper">
 		<block name="cntTrashPile01" prob="0.1"/>

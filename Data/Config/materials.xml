@@ -52,6 +52,13 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="lightopacity" value="0" />
 </material>
 
+<material id="airEnhanced">
+	<property name="collidable" value="false" />
+	<property name="lightopacity" value="0" />
+	<property name="Hardness" type="float" value="50000" />
+	<property name="Mass" type="int" value="30" />	  
+</material>
+
 <material id="MbarbedFence">
 	<property name="damage_category" value="wood" />
 	<property name="surface_category" value="wood" />

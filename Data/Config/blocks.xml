@@ -15797,6 +15797,7 @@ kind of free
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+	<property name="DowngradeBlock" value="CustomCarRespawner" /> <!-- Custom vehicle respawner -->
 </block>
 
 <block id="1456" name="cntShippingCrateBlueprintSmall">
@@ -21098,6 +21099,31 @@ kind of free
 	<property name="Texture" value="285"/>
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<drop event="Destroy" name="brokenGlass" count="1,4"/>
+</block>
+
+<block id="2042" name="CustomCarRespawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" /> <!-- custom material in materials.xml -->
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomCarLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="420" /> <!-- Amount of ingame days to wait for respawn, 60 equals 1 day -->
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2043" name="CustomCarLootHelper">
+	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
+	<property name="CustomIconTint" value="ffa0ff"/>
+	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
+	<property name="Texture" value="278"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="SellableToTrader" value="false"/>
 </block>
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->
