@@ -710,7 +710,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
 		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Magazine_items" value="9mmBullet,9mmHollowPointBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="4.1"/>
