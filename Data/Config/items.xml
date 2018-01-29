@@ -771,7 +771,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
 		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,762mmHollowPointBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="3.9"/>
@@ -833,7 +833,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,762mmHollowPointBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.66"/>
@@ -889,7 +889,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
 		<property name="Crosshair_max_distance" value="54"/> <!-- 54 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,762mmHollowPointBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.5"/>
