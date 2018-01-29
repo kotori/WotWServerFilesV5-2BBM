@@ -14,6 +14,26 @@
 		<block name="cntCar03SedanDamage2"/>
 	</placeholder>
 
+	<placeholder name="CustomBoulderLootHelper">
+		<block name="rockResource"/>
+		<block name="rockResource02"/>
+	</placeholder>
+
+	<placeholder name="CustomSnowBoulderLootHelper">
+		<block name="snowRockResource"/>
+		<block name="snowRockResource02"/>
+	</placeholder>
+
+	<placeholder name="CustomDesertBoulderLootHelper">
+		<block name="desertRockResource"/>
+		<block name="desertRockResource02"/>
+	</placeholder>
+
+	<placeholder name="CustomBurntBoulderLootHelper">
+		<block name="burntForestRockResource"/>
+		<block name="burntForestRockResource02"/>
+	</placeholder>
+
 	<!-- When unwrapping a prefab into the world, replace the lootForest block with one of the following -->
 	<placeholder name="lootForestHelper">
 		<block name="cntTrashPile01" prob="0.1"/>

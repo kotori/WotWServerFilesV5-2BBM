@@ -4711,9 +4711,10 @@ kind of free
 
 <!-- WotW Mod -->
 <block id="439" name="snowRockResource2">
-	<property name="Extends" value="snowRockResource" param1="DowngradeBlock" />
+	<property name="Extends" value="snowRockResource" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab" />
+	<property name="DowngradeBlock" value="CustomSnowBoulderRespawner"/>
 </block>
 
 <!-- WOTW MOD -->
@@ -4746,10 +4747,11 @@ kind of free
 
 <!-- WOTW MOD -->
 <block id="442" name="snowRockResource02Broke2">
-	<property name="Extends" value="snowRockResource02" param1="DowngradeBlock" />
+	<property name="Extends" value="snowRockResource02" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource02_broke2Prefab" />
 	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="DowngradeBlock" value="CustomSnowBoulderRespawner"/>
 </block>
 
 <!-- WotW Mod -->
@@ -4786,9 +4788,10 @@ kind of free
 
 <!-- WotW Mod -->
 <block id="445" name="desertRockResource2">
-	<property name="Extends" value="desertRockResource" param1="DowngradeBlock" />
+	<property name="Extends" value="desertRockResource" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab" />
+	<property name="DowngradeBlock" value="CustomDesertBoulderRespawner"/>
 </block>
 
 <!-- WOTW MOD -->
@@ -4822,10 +4825,11 @@ kind of free
 
 <!-- WOTW MOD -->
 <block id="448" name="desertRockResource02Broke2">
-	<property name="Extends" value="desertRockResource02" param1="DowngradeBlock" />
+	<property name="Extends" value="desertRockResource02" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource02_broke2Prefab" />
 	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="DowngradeBlock" value="CustomDesertBoulderRespawner"/>
 </block>
 
 <!-- WotW Mod -->
@@ -4861,9 +4865,10 @@ kind of free
 
 <!-- WotW Mod -->
 <block id="451" name="burntForestRockResource2">
-	<property name="Extends" value="burntForestRockResource" param1="DowngradeBlock" />
+	<property name="Extends" value="burntForestRockResource" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab" />
+	<property name="DowngradeBlock" value="CustomBurntBoulderRespawner"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -4896,10 +4901,11 @@ kind of free
 
 <!-- WOTW Mod -->
 <block id="454" name="burntForestRockResource02Broke2">
-	<property name="Extends" value="burntForestRockResource02" param1="DowngradeBlock" />
+	<property name="Extends" value="burntForestRockResource02" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource02_broke2Prefab" />
 	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="DowngradeBlock" value="CustomBurntBoulder02Respawner"/>
 </block>
 
 <!-- WOTW MOD -->
@@ -6877,9 +6883,10 @@ kind of free
 </block>
 
 <block id="645" name="rockResourceBroke2">
-	<property name="Extends" value="rockResource" param1="DowngradeBlock"/>
+	<property name="Extends" value="rockResource" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+	<property name="DowngradeBlock" value="CustomBoulderRespawner"/>
 </block>
 
 <block id="646" name="rockResource02Broke1">
@@ -6890,10 +6897,11 @@ kind of free
 </block>
 
 <block id="647" name="rockResource02Broke2">
-	<property name="Extends" value="rockResource" param1="DowngradeBlock"/>
+	<property name="Extends" value="rockResource" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Resources/rock_resource02_broke2Prefab"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="DowngradeBlock" value="CustomBoulderRespawner"/>
 </block>
 
 <block id="648" name="rockResource02Broke3"> <!-- unused block? -->
@@ -21088,7 +21096,131 @@ kind of free
 	<property name="EconomicValue" value="135"/>
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
-	<!-- 10 Free -->
+
+<block id="2031" name="CustomSnowBoulderRespawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomSnowBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2032" name="CustomSnowBoulder02Respawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomSnowBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2033" name="CustomSnowBoulderLootHelper">
+	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
+	<property name="CustomIconTint" value="ffa0ff"/>
+	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
+	<property name="Texture" value="278"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+
+<block id="2034" name="CustomDesertBoulderRespawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomDesertBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2035" name="CustomDesertBoulder02Respawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomDesertBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2036" name="CustomDesertBoulderLootHelper">
+	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
+	<property name="CustomIconTint" value="ffa0ff"/>
+	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
+	<property name="Texture" value="278"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+
+<block id="2037" name="CustomBurntBoulderRespawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomBurntBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2038" name="CustomBurntBoulder02Respawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomBurntBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2039" name="CustomBurntBoulderLootHelper">
+	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
+	<property name="CustomIconTint" value="ffa0ff"/>
+	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
+	<property name="Texture" value="278"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+
+	<!-- 1 Free -->
 
 <block id="2041" name="glassShowerRamp">
 	<property name="Material" value="glass"/>
@@ -21118,6 +21250,47 @@ kind of free
 </block>
 
 <block id="2043" name="CustomCarLootHelper">
+	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
+	<property name="CustomIconTint" value="ffa0ff"/>
+	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
+	<property name="Texture" value="278"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+
+<block id="2044" name="CustomBoulderRespawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2045" name="CustomBoulder02Respawner">
+	<property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />	
+	<property name="Material" value="airEnhanced" />
+	<property name="Shape" value="Invisible" />
+	<property name="Texture" value="250" />
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" count="0" />	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="CustomBoulderLootHelper" />
+	<property name="PlantGrowing.GrowthRate" value="45" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+
+<block id="2046" name="CustomBoulderLootHelper">
 	<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
 	<property name="CustomIconTint" value="ffa0ff"/>
 	<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey"/>
