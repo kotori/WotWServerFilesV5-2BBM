@@ -1204,7 +1204,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="500" />
 	<property name="Mass" type="int" value="25" />
 	<property name="explosionresistance" value=".85" />
-	<property name="MaxDamage" value="12500" />
+	<property name="MaxDamage" value="17500" />
 </material>
 
 <material id="metalplayer">
