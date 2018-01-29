@@ -1201,8 +1201,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="tungsten" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
-	<property name="stability_glue" value="400" />
-	<property name="Mass" type="int" value="30" />
+	<property name="stability_glue" value="500" />
+	<property name="Mass" type="int" value="25" />
 	<property name="explosionresistance" value=".85" />
 	<property name="MaxDamage" value="12500" />
 </material>

@@ -2,7 +2,6 @@
 #### War of the Walkers Mod Server Side Mod W/ BBM v5.2.3
 
 This is a copy of the official War of the Walkers Mod w/ BBM. There are a few adjustments that have been made:
-- Backpack size has been adjusted on death so all items can fit.
 - Tungsten Block's strength has been upgraded from 12500hp to 17500hp and its structural integrity has been improved.
 - Adjusted the AK47 and Hunting Rifle so they can now use 7.62 Hollow Point rounds.
 - Adjusted the MP5 to use 9mm Hollow Point rounds.
