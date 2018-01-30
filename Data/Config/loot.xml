@@ -8,27 +8,32 @@
 <lootcontainers>
 <lootplaceholders>
 
+	<!-- Controls which phase of a car is respawned -->
 	<placeholder name="CustomCarLootHelper">
 		<block name="cntCar03SedanDamage0"/>
 		<block name="cntCar03SedanDamage1"/>
 		<block name="cntCar03SedanDamage2"/>
 	</placeholder>
 
+	<!-- Controls boulder respawning (normal boulders) -->
 	<placeholder name="CustomBoulderLootHelper">
 		<block name="rockResource"/>
 		<block name="rockResource02"/>
 	</placeholder>
 
+	<!-- Controls boulder respawning (snow boulders) -->
 	<placeholder name="CustomSnowBoulderLootHelper">
 		<block name="snowRockResource"/>
 		<block name="snowRockResource02"/>
 	</placeholder>
 
+	<!-- Controls boulder respawning (desert boulders) -->
 	<placeholder name="CustomDesertBoulderLootHelper">
 		<block name="desertRockResource"/>
 		<block name="desertRockResource02"/>
 	</placeholder>
 
+	<!-- Controls boulder respawning (burnt forest boulders) -->
 	<placeholder name="CustomBurntBoulderLootHelper">
 		<block name="burntForestRockResource"/>
 		<block name="burntForestRockResource02"/>
